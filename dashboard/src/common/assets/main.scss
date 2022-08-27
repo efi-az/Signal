@@ -1,0 +1,163 @@
+// @use "theme";
+// @use "ui-kit/typography.scss";
+@import "fonts";
+@import "spacing";
+@import "ui-kit";
+@import "grid";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $fw-fa-base-regular;
+    direction: rtl;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+    background: #000;
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.v-color-base {
+    color: var(--base-color);
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.base-content {
+    margin-right: calc(240px + 25px);
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: calc(50px + 50px);
+    background: #fff;
+    border-radius: 45px;
+    padding: 20px;
+
+    &.not-fill {
+        background: transparent;
+    }
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    &__title {
+        font-size: 20px;
+        color: var(--base-color);
+        font-family: $fw-fa-base-bold;
+    }
+
+    &__action {
+        display: flex;
+    }
+}
+
+.base-button {
+    background: linear-gradient(180deg, #163172 0%, #1E56A0 100%);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    outline: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: all 300ms;
+    padding: 10px 15px;
+    font-family: $fw-fa-base-regular;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 4px 10px rgba(22, 49, 114, 0.12);
+    }
+
+    &__icon {
+        margin: 0 5px;
+    }
+}
+
+.filter-button {
+    border-radius: 10px;
+    background: #D6E4F0;
+    font-size: 16px;
+    color: var(--base-color);
+    outline: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: all 300ms;
+    padding: 10px 15px;
+    font-family: $fw-fa-base-regular;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 4px 10px rgba(22, 49, 114, 0.12);
+    }
+
+    &__icon {
+        margin: 0 5px;
+    }
+
+    &__counter {
+        background: #163172;
+        border-radius: 50%;
+        color: #fff;
+        width: 24px;
+        font-size: 14px;
+        height: 24px;
+    }
+}
+
+// utils
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-end {
+    text-align: end;
+}

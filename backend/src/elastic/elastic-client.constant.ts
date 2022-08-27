@@ -1,0 +1,1 @@
+export const ElasticClientConstant="ELASTIC_SEARCH_CLIENT"

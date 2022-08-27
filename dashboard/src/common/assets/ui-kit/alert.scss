@@ -1,0 +1,27 @@
+.alert {
+  font-size: 0.8rem;
+  background-color: darken(rgba(#6F717B, 0.12), 10%);
+  color: #fff;
+  margin-bottom: 0;
+  border-radius: $ui-kit-border-radius;
+
+  @each $name,
+  $var in $kit-colors {
+    &.v-alert-#{$name} {
+      background-color: darken(rgba($var, 0.12), 10%);
+
+      @if ($var ==#ffffff) {
+        color: #000000 !important;
+        fill: #000000 !important;
+      }
+
+      @else if ($var ==#000000) {
+        color: #ffffff;
+      }
+
+      @else {
+        color: $var;
+      }
+    }
+  }
+}

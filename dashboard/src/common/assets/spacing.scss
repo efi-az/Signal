@@ -1,0 +1,27 @@
+@mixin generate($prefix, $property) {
+    $sizes: [0, .25, .5, 1, 1.5, 3];
+    $spacing: 1rem;
+    
+    @for $i from 1 through length($sizes) {
+      $size: nth($sizes, $i);
+      
+      .#{$prefix}-#{$i - 1} {
+        #{$property}: $spacing * $size;
+      }
+    }
+  }
+
+  $rules: [
+  [ml, margin-left],
+  [mt, margin-top],
+  [mb, margin-bottom],
+  [mr, margin-right],
+  [pl, padding-right],
+  [pr, padding-left],
+  [pb, padding-bottom],
+  [pt, padding-top],
+];
+
+@each $item in $rules {
+  @include generate(nth($item, 1), nth($item, 2));
+}

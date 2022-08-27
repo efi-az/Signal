@@ -1,0 +1,302 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.v-form-control-material {
+  border: 1px solid rgba(111, 113, 123, 0.71);
+  border-radius: $ui-kit-border-radius;
+  display: flex;
+  align-items: center;
+  padding: 0 0.7rem;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  margin-bottom: 25px;
+
+  &:focus-within {
+    box-shadow: 0px 0px 7px -2px rgba(rgba(111, 113, 123, 0.71), 0.46);
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 15px 15px 0 15px;
+    direction: ltr;
+    border: none;
+    background-color: transparent;
+    filter: none;
+    color: #000000;
+
+    &::placeholder {
+      color: rgba(47, 47, 47, 0.71);
+      opacity: 0.5;
+      font-size: 0.8rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input:-webkit-autofill {}
+
+  textarea {
+    height: auto !important;
+  }
+
+  /* LABEL ======================================= */
+  label {
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: normal;
+    position: absolute;
+    margin: 0 10px;
+    pointer-events: none;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    width: auto;
+    height: auto;
+    color: #2c2c2c;
+  }
+
+
+  /* active state */
+  input:read-only~label,
+  select:read-only~label,
+  textarea:read-only~label,
+  input:disabled~label,
+  select:disabled~label,
+  textarea:disabled~label,
+  input:focus~label,
+  select:focus~label,
+  textarea:focus~label,
+  input:valid~label,
+  select:valid~label,
+  textarea:valid~label {
+    top: -10px;
+    font-size: 0.8rem;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin: 0 2px;
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .bar:before,
+  .bar:after {
+    content: '';
+    height: 1px;
+    width: 0;
+    bottom: -1.5px;
+    position: absolute;
+    background: #FFBA00;
+    transition: 0.3s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .bar:before {
+    left: 49%;
+  }
+
+  .bar:after {
+    right: 49%;
+  }
+
+  /* active state */
+  input:focus~.bar:before,
+  select:focus~.bar:before,
+  textarea:focus~.bar:before,
+  input:focus~.bar:after,
+  select:focus~.bar:after,
+  textarea:focus~.bar:after {
+    width: 49%;
+  }
+
+  &.invalid-status,
+  &.valid-status {
+    position: relative;
+
+    &:after {
+      margin: 0 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.invalid-status {
+    &:after {
+      content: "✕";
+      color: #f44336;
+    }
+
+  }
+
+  &.valid-status {
+    &:after {
+      content: "✔";
+      color: #4caf50;
+    }
+  }
+
+  .error {
+    position: absolute;
+    bottom: -20px;
+    color: #f44336;
+    font-size: 0.6rem;
+  }
+
+}
+
+.v-form-control-modern {
+  border: 1px solid rgba(111, 113, 123, 0.71);
+  border-radius: $ui-kit-border-radius;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  margin-bottom: 25px;
+
+  .control-prepend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+
+    &:after {
+      content: "";
+      width: 1px;
+      opacity: 0.5;
+      height: 30px;
+      background: rgba(111, 113, 123, 0.71);
+      margin: 0 5px;
+    }
+
+    svg {
+      fill: rgba(111, 113, 123, 0.71);
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    min-height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #000000;
+
+    &::placeholder {
+      color: rgba(82, 82, 83, 0.71);
+      font-size: 0.8rem;
+    }
+  }
+
+  &:focus-within {
+    border: 1px solid rgba(111, 113, 123, 0.71);
+    box-shadow: 0px 0px 7px -2px rgba(rgba(111, 113, 123, 0.71), 0.46);
+
+    .control-prepend svg {
+      fill: rgba(111, 113, 123, 0.71);
+    }
+  }
+
+  &.invalid-status,
+  &.valid-status {
+    position: relative;
+
+    &:after {
+      margin: 0 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.invalid-status {
+    &:after {
+      content: "✕";
+      color: #f44336;
+    }
+
+  }
+
+  &.valid-status {
+    &:after {
+      content: "✔";
+      color: #4caf50;
+    }
+  }
+
+  .error {
+    position: absolute;
+    bottom: -20px;
+    color: #f44336;
+    font-size: 0.6rem;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  color: #f44336;
+  font-size: 0.6rem;
+}
+
+@each $name,
+$var in $kit-colors {
+  .v-form-control-material {
+    &.v-control-#{$name} {
+
+      .bar:before,
+      .bar:after {
+        background: $var;
+      }
+    }
+  }
+
+  .v-form-control-modern {
+    &.v-control-#{$name} {
+      &:focus-within {
+        border: 1px solid $var  !important;
+        box-shadow: 0px 0px 7px -2px rgba($var, 0.46) !important;
+
+        .control-prepend svg {
+          fill: $var  !important;
+        }
+      }
+    }
+
+    &.border-danger {
+      &:focus-within {
+        border-color: #ff253a !important;
+      }
+    }
+  }
+}

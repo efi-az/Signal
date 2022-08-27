@@ -1,0 +1,43 @@
+@import "variable";
+@import "card";
+@import "input";
+@import "button";
+@import "switch";
+@import "typography";
+@import "checkbox";
+@import "alert";
+@import "badge";
+@import "collapse";
+
+
+
+@each $name,
+$var in $kit-colors {
+  .v-bg-#{$name} {
+    background: $var  !important;
+  }
+
+  .v-color-#{$name} {
+    color: $var  !important;
+  }
+
+  .v-fill-#{$name} {
+    fill: $var  !important;
+  }
+
+  .v-border-#{$name} {
+    border-color: $var  !important;
+  }
+
+  .v-badge-#{$name} {
+    background-color: rgba($var, 0.22);
+    color: $var;
+  }
+
+  .v-bg-modern-#{$name} {
+    background-color: rgba($var, 0.07);
+    color: $var;
+    fill: $var;
+    // border: 0.5px solid rgba($var, 0.6);
+  }
+}

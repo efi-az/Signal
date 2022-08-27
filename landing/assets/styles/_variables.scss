@@ -1,0 +1,31 @@
+@mixin flex($dir: center) {
+  display: flex;
+  justify-content: $dir;
+  align-content: center;
+  align-items: center;
+}
+
+:root {
+  --fs-ssm: 16px;
+  --fs-sm: 18px;
+  --fs-md: 20px;
+  --fs-xl: 24px;
+  --fs-xxl: 48px;
+  --color-base: #163172;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --bakh-fa-fat: "bakh-fa-fat";
+  --bakh-fa-bold: "bakh-fa-bold";
+  --bakh-fa-thin: "bakh-fa-thin";
+  --bakh-fa-heavy: "bakh-fa-heavy";
+  --bakh-fa-light: "bakh-fa-light";
+  --bakh-fa-medium: "bakh-fa-medium";
+  --bakh-fa-regular: "bakh-fa-regular";
+  --bakh-en-fat: "bakh-en-fat";
+  --bakh-en-bold: "bakh-en-bold";
+  --bakh-en-thin: "bakh-en-thin";
+  --bakh-en-heavy: "bakh-en-heavy";
+  --bakh-en-light: "bakh-en-light";
+  --bakh-en-medium: "bakh-en-medium";
+  --bakh-en-regular: "bakh-en-regular";
+}

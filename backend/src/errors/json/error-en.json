@@ -1,0 +1,23 @@
+[
+  {
+    "1021": "Conflict phone number"
+  },
+  {
+    "1022": "otp code invalid"
+  },
+  {
+    "1023": "otp code expired"
+  },
+  {
+    "1024": "validation error"
+  },
+  {
+    "1025": "password with re password not equal"
+  },
+  {
+    "1026": "user not exists"
+  },
+  {
+    "1027": "username password incorrect"
+  }
+]

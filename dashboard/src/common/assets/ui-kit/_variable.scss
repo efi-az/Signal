@@ -1,0 +1,69 @@
+$v-white: #fff !default;
+$v-gray-100: #f6f9fc !default;
+$v-gray-200: #e9ecef !default;
+$v-gray-300: #dee2e6 !default;
+$v-gray-400: #ced4da !default;
+$v-gray-500: #979797 !default;
+$v-gray-600: #8898aa !default;
+
+$v-gray-700: #535C6D !default;
+$v-gray-800: #323A49 !default;
+$v-gray-900: #191f28 !default;
+$v-black: #000 !default;
+
+
+$v-blue: #309CFF !default;
+$v-indigo: #5603ad !default;
+$v-purple: #9c27b0 !default;
+$v-pink: #f3a4b5 !default;
+$v-red: #C71850 !default;
+$v-orange: #fb8638 !default;
+$v-yellow: #ffd600 !default;
+$v-green: #00BA88 !default;
+$v-teal: #11cdef !default;
+$v-cyan: #0FCDCE !default;
+$v-violet: #5A38DA !default;
+$v-rose: #E24036 !default;
+$v-base: #163172 !default;
+
+/*
+----- ui kit theme color
+*/
+
+$v-primary: $v-blue;
+$v-success: $v-green;
+$v-info: $v-teal;
+$v-warning: $v-orange;
+$v-danger: $v-red;
+$v-rose: $v-rose;
+$v-gold: $v-yellow;
+$v-violet: $v-violet;
+$v-purple: $v-purple;
+
+$v-white: $v-white;
+$v-gray: $v-gray-500;
+$v-dark: $v-gray-800;
+$v-darken: $v-gray-900;
+$v-black: $v-black;
+
+$kit-colors: () !default;
+$kit-colors: (
+        "primary": $v-blue,
+        "success": $v-green,
+        "info": $v-teal,
+        "warning": $v-orange,
+        "danger": $v-red,
+        "rose": $v-rose,
+        "gold": $v-gold,
+        "violet": $v-violet,
+        "purple": $v-purple,
+        "base": $v-base,
+        "cyan": $v-cyan,
+        "white": $v-white,
+        "gray": $v-gray,
+        "dark": $v-dark,
+        "darken": $v-darken,
+        "black": $v-black,
+);
+
+$ui-kit-border-radius: 0.5rem

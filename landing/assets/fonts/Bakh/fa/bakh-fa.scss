@@ -1,0 +1,57 @@
+// Vazir Normal Fonts
+@font-face {
+  font-family: "bakh-fa-bold";
+  src: local("bakh-fa-bold"), url(woff/YekanBakh-Bold.woff) format("woff"),
+    url(woff2/YekanBakh-Bold.woff2) format("woff2"),
+    url(ttf/YekanBakh-Bold.ttf) format("truetype"),
+    url(eot/YekanBakh-Bold.eot) format("ie9-skip-eot");
+}
+
+@font-face {
+  font-family: "bakh-fa-fat";
+  src: local("bakh-fa-fat"), url(woff/YekanBakh-Fat.woff) format("woff"),
+    url(woff2/YekanBakh-Fat.woff2) format("woff2"),
+    url(ttf/YekanBakh-Fat.ttf) format("truetype"),
+    url(eot/YekanBakh-Fat.eot) format("ie9-skip-eot");
+}
+
+@font-face {
+  font-family: "bakh-fa-heavy";
+  src: local("bakh-fa-heavy"), url(woff/YekanBakh-Heavy.woff) format("woff"),
+    url(woff2/YekanBakh-Heavy.woff2) format("woff2"),
+    url(ttf/YekanBakh-Heavy.ttf) format("truetype"),
+    url(eot/YekanBakh-Heavy.eot) format("ie9-skip-eot");
+}
+
+@font-face {
+  font-family: "bakh-fa-light";
+  src: local("bakh-fa-light"), url(woff/YekanBakh-Light.woff) format("woff"),
+    url(woff2/YekanBakh-Light.woff2) format("woff2"),
+    url(ttf/YekanBakh-Light.ttf) format("truetype"),
+    url(eot/YekanBakh-Light.eot) format("ie9-skip-eot");
+}
+
+// bakh-fa Farsi Digits Fonts
+@font-face {
+  font-family: "bakh-fa-medium";
+  src: local("bakh-fa-medium"), url(woff/YekanBakh-Medium.woff) format("woff"),
+    url(woff2/YekanBakh-Medium.woff2) format("woff2"),
+    url(ttf/YekanBakh-Medium.ttf) format("truetype"),
+    url(eot/YekanBakh-Medium.eot) format("ie9-skip-eot");
+}
+
+@font-face {
+  font-family: "bakh-fa-regular";
+  src: local("bakh-fa-regular"), url(woff/YekanBakh-Regular.woff) format("woff"),
+    url(woff2/YekanBakh-Regular.woff2) format("woff2"),
+    url(ttf/YekanBakh-Regular.ttf) format("truetype"),
+    url(eot/YekanBakh-Regular.eot) format("ie9-skip-eot");
+}
+
+@font-face {
+  font-family: "bakh-fa-thin";
+  src: local("bakh-fa-thin"), url(woff/YekanBakh-Thin.woff) format("woff"),
+    url(woff2/YekanBakh-Thin.woff2) format("woff2"),
+    url(ttf/YekanBakh-Thin.ttf) format("truetype"),
+    url(eot/YekanBakh-Thin.eot) format("ie9-skip-eot");
+}

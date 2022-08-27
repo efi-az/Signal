@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "yekanBakh-regular";
+    src: local('yekanBakh-regular'), url("./YekanBakh-Regular.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "yekanBakh-light";
+    src: local('yekanBakh-light'), url("./YekanBakh-Light.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "yekanBakh-fat";
+    src: local('yekanBakh-fat'), url("./YekanBakh-Fat.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: local('poppins-regular'), url("./Poppins-Regular.woff2") format("woff2");
+    font-weight: bold;
+}
+
+// @font-face {
+// 	font-family: IRANSans;
+// 	font-style: normal;
+// 	font-weight: 900;
+// 	src: url('../../fonts/iransans5/eot/IRANSansWeb_Black.eot');
+// 	src: url('../../fonts/iransans5/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+// 		 url('../../fonts/iransans5/woff2/IRANSansWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+// 		 url('../../fonts/iransans5/woff/IRANSansWeb_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+// 		 url('../../fonts/iransans5/ttf/IRANSansWeb_Black.ttf') format('truetype');
+// }

@@ -1,0 +1,30 @@
+.badge {
+  font-size: 0.8rem;
+  font-weight: normal;
+  // background-color: darken(rgba(#6F717B, 0.12), 10%);
+  // color: #3b3d46;
+  padding: 0 5px;
+  margin-bottom: 0;
+  border-radius: $ui-kit-border-radius;
+
+  @each $name,
+  $var in $kit-colors {
+    &.v-badge-#{$name} {
+      background-color: darken(rgba($var, 0.12), 10%);
+      border: 0.3px solid $var;
+
+      @if ($var ==#ffffff) {
+        color: #000000 !important;
+        fill: #000000 !important;
+      }
+
+      @else if ($var ==#000000) {
+        color: #ffffff;
+      }
+
+      @else {
+        color: $var;
+      }
+    }
+  }
+}

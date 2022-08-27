@@ -1,0 +1,12 @@
+export enum TimeFrameEnum {
+  ONEMINUTE="1m",
+  THREEMINUTE="3m",
+  FIVEMINUTE="5m",
+  ONEHOUR="1H",
+  TWOHOUR="2H",
+  FOURHOUR="4H",
+  THREEHOUR="3H",
+  EIGHTHOUR="8H",
+  ONEDAY="1D",
+  ONEMONTH="1M"
+}

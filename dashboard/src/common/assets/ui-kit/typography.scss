@@ -1,0 +1,36 @@
+$fw-fa-base-regular: 'yekanBakh-regular';
+$fw-fa-base-bold: 'yekanBakh-fat';
+$fw-fa-base-light: 'yekanBakh-light';
+
+$fw-en-base-light: 'poppins-regular';
+
+$fonts-family: (
+    ) !default;
+$fonts-family: (
+    "regular": $fw-fa-base-regular,
+    "bold": $fw-fa-base-bold,
+    "light": $fw-fa-base-light,
+    "en-regular": $fw-en-base-light,
+);
+
+$fonts-size: (
+    ) !default;
+$fonts-size: (
+    "1": 32,
+    "2": 24,
+    "3": 20,
+);
+
+@each $name,
+$var in $fonts-family {
+    .v-fw-#{$name} {
+        font-family: $var  !important;
+    }
+}
+
+@each $name,
+$var in $fonts-size {
+    .v-fs-#{$name} {
+        font-size: $var+px  !important;
+    }
+}

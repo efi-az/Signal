@@ -1,0 +1,45 @@
+body {
+  direction: rtl;
+  margin: 0;
+  min-height: 100vh;
+  background: #f6f6f6;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.custom-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.blue-bg {
+  background: linear-gradient(180deg, #163172 0%, #1e56a0 100%);
+  //   border-radius: 10px;
+}
+
+button {
+  background: transparent;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+input,
+input:autofill {
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.color-white {
+  color: white !important;
+}
